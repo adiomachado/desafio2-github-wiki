@@ -23,8 +23,7 @@ function App() {
           return;
         }
         //-- Verifica se o repositório já foi adicionado
-        const { data } = await api.get(`repos/${currentRepo}`)
-        
+        const { data } = await api.get(`repos/${currentRepo}`)      
         
         if(data.id){
           //-- Verifica se o repositório já existe na lista
